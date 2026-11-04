@@ -1,0 +1,5 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and dataset publication when using these materials."
+title: "Setswana MRP Explainability Benchmark"
+type: software
+# Add authors, DOI, version and release date once approved.

@@ -1,0 +1,16 @@
+{
+  "lambda_0": {
+    "model_checkpoint_revision": "TODO",
+    "sha256": "TODO",
+    "trainer_version": "TODO",
+    "tokenizer_revision": "TODO",
+    "hardware": "TODO"
+  },
+  "lambda_0p5": {
+    "model_checkpoint_revision": "TODO",
+    "sha256": "TODO",
+    "trainer_version": "TODO",
+    "tokenizer_revision": "TODO",
+    "hardware": "TODO"
+  }
+}

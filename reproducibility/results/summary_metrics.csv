@@ -1,0 +1,8 @@
+metric,lambda_0,lambda_0p5,scope
+accuracy,0.903061,0.897959,holdout_196
+macro_f1,0.9019,0.8967,holdout_196
+offensive_recall,0.866667,0.855556,holdout_196
+lime_mean_f1,0.6048,0.6090,matched_76
+lime_partial_mean_f1,0.522,0.534,matched_partial_61
+counterfactual_mean_delta_p,0.4860,0.4159,matched_76
+counterfactual_flip_rate,0.5263,0.4474,matched_76

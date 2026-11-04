@@ -1,0 +1,54 @@
+{
+  "study": "Masked Rationale Prediction for Explainable Offensive Language Detection in Setswana",
+  "pretrained_model": "dsfsi/PuoBERTa",
+  "classification_loss": "class-weighted cross entropy, PyTorch weighted mean",
+  "auxiliary_loss": "mean cross entropy over masked gold-rationale subwords",
+  "experiment_configurations": [
+    {
+      "experiment_id": "lambda_0",
+      "lambda_mrp": 0.0
+    },
+    {
+      "experiment_id": "lambda_0p5",
+      "lambda_mrp": 0.5
+    }
+  ],
+  "class_weights": [
+    1.0,
+    2.0
+  ],
+  "max_length": 128,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "epochs_cv": 5,
+  "cv_seeds": [
+    42,
+    0,
+    13
+  ],
+  "cv_folds": 5,
+  "epochs_final": 10,
+  "final_seed": 42,
+  "batch_train": 16,
+  "batch_eval": 64,
+  "lime": {
+    "num_samples": 1000,
+    "max_features": 15,
+    "feature_selection": "positive offensive-class attributions; top k set by reference rationale length",
+    "matching": "word set; not position aware"
+  },
+  "corpus": {
+    "published_n": 977,
+    "experimental_dev_n": 780,
+    "experimental_holdout_n": 196,
+    "difference_unresolved": 1
+  },
+  "input_files_required": [
+    "training_data.csv",
+    "TEST_WITHOUT_TRIGGERS.csv",
+    "TEST_WITH_TRIGGERS.csv"
+  ],
+  "source_data_files_present": false,
+  "exact_checkpoint_identifiers_available": false,
+  "notes": "Values are from archived notebook configurations; precise versions/hardware/checkpoint provenance need verification."
+}

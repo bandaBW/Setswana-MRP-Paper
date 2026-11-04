@@ -1,0 +1,3 @@
+configuration,tn,fp,fn,tp,provenance
+lambda_0,99,7,12,78,verified_manuscript_confusion_matrix
+lambda_0p5,99,7,13,77,verified_manuscript_confusion_matrix

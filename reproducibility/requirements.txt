@@ -1,0 +1,11 @@
+# Approximate dependencies from notebooks, NOT a verified environment lockfile.
+# Record exact versions from the machine that generated the final checkpoints.
+numpy
+pandas
+torch
+transformers
+scikit-learn
+scipy
+lime
+matplotlib
+datasets
