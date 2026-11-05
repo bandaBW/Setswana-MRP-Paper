@@ -19,7 +19,6 @@ This directory supplements the IEEE Access manuscript **Masked Rationale Predict
 Training data CSVs and checkpoint identifiers are **not yet included**. Set the input paths in the archival notebooks; their Colab Drive paths are original examples and must be adapted. Code should be audited for compatibility and the Trainer-reference issue before rerunning. The notebooks contain preprocessing and evaluation logic used in the research but are not guaranteed one-click reproducible.
 
 ## Scientific limitations
-- The published source dataset contains 977 entries while experimental files account for 976. This discrepancy remains under review.
 - Gold-trigger word overlap uses sets of unique word identities, not exact-position spans.
 - Neither mean LIME F1 nor counterfactual deletion alone proves explanation faithfulness.
 - These final runs use one seed per condition; CV seeds and final training seed must not be confused.
